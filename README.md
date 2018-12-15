@@ -8,6 +8,11 @@ This is a set of documents which describes Gogs REST API v1 usage, since it's st
 
 If you have any questions or concern, please [file an issue](https://github.com/gogits/go-gogs-client/issues/new). :blush:
 
+## TOC
+
+- [Repositories](Repositories)
+    - [Commits](Repositories/Commits.md)
+
 ## Installation 
 
 The API is preinstalled with the base Gogs deployment. See [current version](#current-version) and [API source code](https://github.com/gogs/gogs/tree/master/routes/api) for more details.
@@ -28,10 +33,11 @@ server: Caddy
 content-length: 175
 ```
 
-All timestamps return in ISO 8601 format:
+All timestamps return in RFC3339 format:
 
 ```
 YYYY-MM-DDTHH:MM:SSZ
+2006-01-02T15:04:05Z07:00
 ```
 
 ## Authentication
@@ -55,9 +61,37 @@ $ curl -H "Authorization: token {ACCESS_TOKEN}" https://try.gogs.io/api/v1/user/
 $ curl https://try.gogs.io/api/v1/user/repos?token={ACCESS_TOKEN}
 ```
 
-## Parameters
+## Pagination
 
-Parameters of all requests use POST method can be passed through a normal HTML form or JSON data, but sending JSON is recommended.
+You can specify further pages with the `?page` parameter.
+
+```
+curl https://try.gogs.io/api/v1/repos/unknwon/hello/issues?page=1
+```
+
+Note that page numbering is 1-based and that omitting the `?page` parameter will return the first page.
+
+### Link header
+
+The [Link header](http://tools.ietf.org/html/rfc5988) includes pagination information:
+
+```
+Link: <https://try.gogs.io/api/v1/repos/unknwon/hello/issues?page=3>; rel="next",
+  <https://try.gogs.io/api/v1/repos/unknwon/hello/issues?page=50>; rel="last"
+```
+
+The example includes a line break for readability.
+
+This Link response header contains one or more Hypermedia link relations, some of which may require expansion as URI templates.
+
+The possible rel values are:
+
+|Name|Description|
+|----|-----------|
+|`next`|The link relation for the immediate next page of results.|
+|`last`|The link relation for the last page of results.|
+|`first`|The link relation for the first page of results.|
+|`prev`|The link relation for the immediate previous page of results.|
 
 ## Clients
 
