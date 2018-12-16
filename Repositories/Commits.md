@@ -2,6 +2,8 @@
 
 ## Get a single commit
 
+>Available since 0.11.80
+
 ```
 GET /repos/:username/:reponame/commits/:sha
 ```
@@ -57,4 +59,24 @@ Status: 200 OK
     }
   ]
 }
+```
+
+## Get the SHA-1 of a commit reference
+
+>Available since 0.11.80
+
+```
+GET /repos/:username/:reponame/commits/:ref
+Accept: application/vnd.gogs.sha
+```
+
+It supports either short name (e.g. `master`, `feature/666`) or full name (e.g. `refs/tags/v1.0`, `refs/heads/develop`). 
+
+### Response
+
+```
+Status: 200 OK
+```
+```
+dc20792485ffd49b0bca49f90a8d44a16241b84a
 ```
