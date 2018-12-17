@@ -10,8 +10,12 @@ If you have any questions or concern, please [file an issue](https://github.com/
 
 ## TOC
 
+- [Administration](Administration)
+  - [Users](Administration/Users.md)
+  - [Repositories](Administration/Repositories.md)
+  - [Organizations](Administration/Organizations.md)
 - [Repositories](Repositories)
-    - [Commits](Repositories/Commits.md)
+  - [Commits](Repositories/Commits.md)
 
 ## Installation 
 
