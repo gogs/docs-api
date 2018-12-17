@@ -14,6 +14,10 @@ If you have any questions or concern, please [file an issue](https://github.com/
   - [Users](Administration/Users.md)
   - [Repositories](Administration/Repositories.md)
   - [Organizations](Administration/Organizations.md)
+- [Issues](Issues)
+  - [Comments](Issues/Comments.md)
+  - [Labels](Issues/Labels.md)
+  - [Milestones](Issues/Milestones.md)
 - [Repositories](Repositories)
   - [Commits](Repositories/Commits.md)
 
