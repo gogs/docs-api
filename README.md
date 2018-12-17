@@ -18,8 +18,21 @@ If you have any questions or concern, please [file an issue](https://github.com/
   - [Comments](Issues/Comments.md)
   - [Labels](Issues/Labels.md)
   - [Milestones](Issues/Milestones.md)
+- [Miscellaneous](Miscellaneous)
+- [Organizations](Organizations)
+  - [Members](Organizations/Members.md)
+  - [Teams](Organizations/Teams.md)
 - [Repositories](Repositories)
+  - [Branches](Repositories/Branches.md)
+  - [Collaborators](Repositories/Collaborators.md)
   - [Commits](Repositories/Commits.md)
+  - [Contents](Repositories/Contents.md)
+  - [Deploy Keys](Repositories/Deploy%20Keys.md)
+  - [Webhooks](Repositories/Webhooks.md)
+- [Users](Users)
+  - [Emails](Users/Emails.md)
+  - [Followers](Users/Followers.md)
+  - [Public Keys](Users/Public%20Keys.md)
 
 ## Installation 
 
@@ -31,7 +44,7 @@ All Gogs APIs are under **v1** using request path prefix `/api/v1`.
 
 ## Schema
 
-All data is sent and received as JSON.
+All data is sent and received as JSON unless specified otherwise.
 
 ```
 HTTP/2 200
