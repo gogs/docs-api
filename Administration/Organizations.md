@@ -10,7 +10,7 @@ POST /admin/users/:username/orgs
 
 |Name|Type|Description|
 |----|----|-----------|
-|username|string|**Required** Organization user name|
+|user_name|string|**Required** Organization user name|
 |full_name|string|Full name of organization|
 |description|string|Description to the organization|
 |website|string|Official website|
