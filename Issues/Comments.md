@@ -73,9 +73,9 @@ GET /repos/:username/:reponame/issues/comments
 
 ### Parameters
 
-| Name | Type | Description |
-| --- | --- | --- |
-| since | string | Only comments updated at or after this time are returned. This is a timestamp in RFC3339 format: **2006-01-02T15:04:05Z07:00**|
+|Name|Type|Description|
+|----|----|-----------|
+|since|string|Only comments updated at or after this time are returned. This is a timestamp in RFC3339 format: **2006-01-02T15:04:05Z07:00**|
 
 ### Response
 

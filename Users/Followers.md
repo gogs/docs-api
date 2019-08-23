@@ -99,6 +99,8 @@ Status: 204 No Content
 DELETE /user/following/:username
 ```
 
+### Response
+
 ```
 Status: 204 No Content
 ```

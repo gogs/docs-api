@@ -232,7 +232,7 @@ Status: 200 OK
 DELETE /repos/:username/:reponame/issues/:index/labels
 ```
 
-#### Response
+### Response
 
 ```
 Status: 204 No Content

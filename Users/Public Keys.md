@@ -112,6 +112,8 @@ Status: 201 Created
 DELETE /user/keys/:id
 ```
 
+### Response
+
 ```
 Status: 204 No Content
 ```

@@ -97,6 +97,8 @@ Status: 200 OK
 DELETE /admin/users/:username
 ```
 
+### Response
+
 ```
 Status: 204 No Content
 ```
