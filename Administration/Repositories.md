@@ -1,4 +1,4 @@
-# Repositorie Administration
+# Repositories Administration
 
 ## Create a new repository
 
