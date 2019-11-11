@@ -346,7 +346,7 @@ Status: 204 No Content
 ## Edit Issue Tracker
 
 ```
-PATCH /repos/:owner/:repo/issue-tracker
+POST /repos/:owner/:repo/issue-tracker
 ```
 
 ### Parameters
