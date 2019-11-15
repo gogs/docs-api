@@ -6,7 +6,7 @@ This is a set of documents which describes Gogs REST API v1 usage, since it's st
 2. We do not provide documentation in other languages.
 3. Aim to be in the format that is similar to [GitHub REST API v3](https://developer.github.com/v3/).
 
-If you have any questions or concern, please [file an issue](https://github.com/gogits/go-gogs-client/issues/new). :blush:
+If you have any questions or concern, please [file an issue](https://github.com/gogs/go-gogs-client/issues/new). :blush:
 
 ## TOC
 
