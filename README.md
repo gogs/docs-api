@@ -36,7 +36,7 @@ If you have any questions or concern, please [file an issue](https://github.com/
 
 ## Installation 
 
-The API is preinstalled with the base Gogs deployment. See [current version](#current-version) and [API source code](https://github.com/gogs/gogs/tree/master/routes/api) for more details.
+The API is preinstalled with the base Gogs deployment. See [current version](#current-version) and [API source code](https://github.com/gogs/gogs/tree/master/internal/route/api) for more details.
 
 ## Current Version
 
