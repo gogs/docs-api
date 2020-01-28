@@ -13,16 +13,14 @@ POST /markdown
 |Name|Type|Description|
 |----|----|-----------|
 |text|string|**Required** The Markdown text to render|
-|mode|string|The rendering mode, can be empty or **gfm**. In **gfm** mode, Markdown will be rendered with repository context|
-|context|string|The repository context. Only taken into account when rendering mode is **gfm**|
+|context|string|The repository context, e.g. `https://github.com/gogs/gogs`|
 
 ### Example
 
 ```json
 {
   "text": "Hello world gogs/gogs#1 **cool**, and #1!",
-  "mode": "gfm",
-  "context": "gogs/gogs"
+  "context": "https://github.com/gogs/gogs"
 }
 ```
 
@@ -33,7 +31,7 @@ Status: 200 OK
 Content-Type: text/html
 ```
 ```html
-<p>Hello world gogs/gogs#1 <strong>cool</strong>, and <a href="https://try.gogs.io/gogs/gogs/issues/1" rel="nofollow">#1</a>!</p>
+<p>Hello world <a href="https://try.gogs.io/gogs/gogs/issues/1" rel="nofollow">gogs/gogs#1</a> <strong>cool</strong>, and <a href="https://github.com/gogs/gogs/issues/1" rel="nofollow">#1</a>!</p>
 ```
 
 ### Render a Markdown document in raw mode
