@@ -28,11 +28,14 @@ If you have any questions or concern, please [file an issue](https://github.com/
   - [Commits](Repositories/Commits.md)
   - [Contents](Repositories/Contents.md)
   - [Deploy Keys](Repositories/Deploy%20Keys.md)
+  - [Tree](Repositories/Tree.md)
   - [Webhooks](Repositories/Webhooks.md)
 - [Users](Users)
   - [Emails](Users/Emails.md)
   - [Followers](Users/Followers.md)
   - [Public Keys](Users/Public%20Keys.md)
+- [Git Data](Git%20Data)
+  - [Trees](Git%20Data/Trees.md)
 
 ## Installation 
 
