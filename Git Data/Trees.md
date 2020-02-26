@@ -1,6 +1,6 @@
-# Tree
+# Git Trees
 
-## List Repository Tree
+## Get a tree
 
 ```
 GET /repos/:owner/:repo/git/trees/:sha
