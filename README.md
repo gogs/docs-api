@@ -34,6 +34,8 @@ If you have any questions or concern, please [file an issue](https://github.com/
   - [Emails](Users/Emails.md)
   - [Followers](Users/Followers.md)
   - [Public Keys](Users/Public%20Keys.md)
+- [Git Data](Git%20Data)
+  - [Trees](Git%20Data/Trees.md)
 
 ## Installation 
 
