@@ -21,7 +21,6 @@ GET /repos/:username/:reponame/raw/:ref/:path
 Status: 200 OK
 Content-Type: text/plain
 ```
-```
 
 	## Getting Started
 	
@@ -43,7 +42,7 @@ Content-Type: text/plain
 		})
 		m.Run()
 	}
-```
+	```
 
 ## Download archive
 
