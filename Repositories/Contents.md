@@ -65,3 +65,106 @@ GET /repos/:username/:reponame/archive/:ref:format
 Status: 200 OK
 Content-Type: application/octet-stream
 ```
+
+## Get Contents
+
+```
+GET /repos/:username/:reponame/contents/:ref/:path
+```
+
+### Response if content is a file
+```
+Status: 200 OK
+```
+```json
+{
+  "type": "file",
+  "size": 0,
+  "name": "text1.text",
+  "path": "text1.text",
+  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+  "url": "https://try.gogs.io/api/v1/repos/root/test-symlink/contents/text1.text",
+  "git_url": "https://try.gogs.io/api/v1/repos/root/test-symlink/trees/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+  "html_url": "https://try.gogs.io/api/v1/repos/root/test-symlink/tree/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+  "download_url": "https://try.gogs.io/api/v1/root/test-symlink/raw/text1.text",
+  "_links": {
+    "git": "https://try.gogs.io/api/v1/repos/root/test-symlink/trees/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "self": "https://try.gogs.io/api/v1/repos/root/test-symlink/contents/text1.text",
+    "html": "https://try.gogs.io/api/v1/repos/root/test-symlink/tree/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  }
+}
+```
+
+
+### Response if content is a directory
+
+```
+Status: 200 OK
+```
+```json
+[
+  {
+    "type": "file",
+    "size": 0,
+    "name": "README.md",
+    "path": "d1",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "url": "https://try.gogs.io/api/v1/repos/root/test-symlink/contents/d1",
+    "git_url": "https://try.gogs.io/api/v1/repos/root/test-symlink/trees/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "html_url": "https://try.gogs.io/api/v1/repos/root/test-symlink/tree/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "download_url": "https://try.gogs.io/api/v1/root/test-symlink/raw/d1",
+    "_links": {
+      "git": "https://try.gogs.io/api/v1/repos/root/test-symlink/trees/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "self": "https://try.gogs.io/api/v1/repos/root/test-symlink/contents/d1",
+      "html": "https://try.gogs.io/api/v1/repos/root/test-symlink/tree/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    }
+  }
+]
+```
+
+### Response if content is a symlink
+```
+Status: 200 OK
+```
+```json
+{
+  "type": "symlink",
+  "target": "text1.text",
+  "size": 10,
+  "name": "text2.text",
+  "path": "text2.text",
+  "sha": "0d4ce3e58e1afc8be81cb757d628d94af27581ea",
+  "url": "https://try.gogs.io/api/v1/repos/root/test-symlink/contents/text2.text",
+  "git_url": "https://try.gogs.io/api/v1/repos/root/test-symlink/trees/0d4ce3e58e1afc8be81cb757d628d94af27581ea",
+  "html_url": "https://try.gogs.io/api/v1/repos/root/test-symlink/tree/0d4ce3e58e1afc8be81cb757d628d94af27581ea",
+  "download_url": "https://try.gogs.io/api/v1/root/test-symlink/raw/text2.text",
+  "_links": {
+    "git": "https://try.gogs.io/api/v1/repos/root/test-symlink/trees/0d4ce3e58e1afc8be81cb757d628d94af27581ea",
+    "self": "https://try.gogs.io/api/v1/repos/root/test-symlink/contents/text2.text",
+    "html": "https://try.gogs.io/api/v1/repos/root/test-symlink/tree/0d4ce3e58e1afc8be81cb757d628d94af27581ea"
+  }
+}
+```
+
+### Response if content is a submodule
+```
+Status: 200 OK
+```
+```json
+{
+  "type": "submodule",
+  "size": 0,
+  "name": "testrepo",
+  "path": "testrepo",
+  "sha": "2ddc5c87f1e6d78ea63a2d5fa19527a804ad252e",
+  "url": "https://try.gogs.io/api/v1/repos/root/test-symlink/contents/testrepo",
+  "git_url": "https://try.gogs.io/api/v1/repos/root/test-symlink/trees/2ddc5c87f1e6d78ea63a2d5fa19527a804ad252e",
+  "html_url": "https://try.gogs.io/api/v1/repos/root/test-symlink/tree/2ddc5c87f1e6d78ea63a2d5fa19527a804ad252e",
+  "download_url": "https://try.gogs.io/api/v1/root/test-symlink/raw/testrepo",
+  "_links": {
+    "git": "https://try.gogs.io/api/v1/repos/root/test-symlink/trees/2ddc5c87f1e6d78ea63a2d5fa19527a804ad252e",
+    "self": "https://try.gogs.io/api/v1/repos/root/test-symlink/contents/testrepo",
+    "html": "https://try.gogs.io/api/v1/repos/root/test-symlink/tree/2ddc5c87f1e6d78ea63a2d5fa19527a804ad252e"
+  }
+}
+```
