@@ -40,3 +40,9 @@ Status: 200 OK
   }
 ]
 ```
+
+## Delete collaborator
+
+```
+DELETE /repos/:username/:reponame/collaborators/:collaborator
+```
