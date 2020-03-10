@@ -107,18 +107,36 @@ Status: 200 OK
 [
   {
     "type": "file",
-    "size": 0,
-    "name": "README.md",
-    "path": "d1",
-    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-    "url": "https://try.gogs.io/api/v1/repos/root/test-symlink/contents/d1",
-    "git_url": "https://try.gogs.io/api/v1/repos/root/test-symlink/trees/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-    "html_url": "https://try.gogs.io/api/v1/repos/root/test-symlink/tree/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-    "download_url": "https://try.gogs.io/api/v1/root/test-symlink/raw/d1",
+    "encoding": "base64",
+    "size": 50,
+    "name": "Sum.groovy",
+    "path": "src/Sum.groovy",
+    "content": "c3RhdGljIGludCBzdW0oaW50IHZhbDEsIHZhbDIpIHsKICAgIHZhbDEgKyB2YWwyCn0=",
+    "sha": "9f221918607d78c1db3f6c6d5afa68a66b1146a8",
+    "url": "https://try.gogs.io/api/v1/repos/unknwon/git-module-testrepo/contents/src/Sum.groovy",
+    "git_url": "https://try.gogs.io/api/v1/repos/unknwon/git-module-testrepo/git/blobs/9f221918607d78c1db3f6c6d5afa68a66b1146a8",
+    "html_url": "https://try.gogs.io/unknwon/git-module-testrepo/src/master/Sum.groovy",
+    "download_url": "https://try.gogs.io/unknwon/git-module-testrepo/raw/master/Sum.groovy",
     "_links": {
-      "git": "https://try.gogs.io/api/v1/repos/root/test-symlink/trees/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-      "self": "https://try.gogs.io/api/v1/repos/root/test-symlink/contents/d1",
-      "html": "https://try.gogs.io/api/v1/repos/root/test-symlink/tree/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      "git": "https://try.gogs.io/api/v1/repos/unknwon/git-module-testrepo/git/blobs/9f221918607d78c1db3f6c6d5afa68a66b1146a8",
+      "self": "https://try.gogs.io/api/v1/repos/unknwon/git-module-testrepo/contents/src/Sum.groovy",
+      "html": "https://try.gogs.io/unknwon/git-module-testrepo/src/master/Sum.groovy"
+    }
+  },
+  {
+    "type": "dir",
+    "size": 0,
+    "name": "main",
+    "path": "src/main",
+    "sha": "b312d30ddff2f204d6b6aa78dd4beda593d9d787",
+    "url": "https://try.gogs.io/api/v1/repos/unknwon/git-module-testrepo/contents/src/main",
+    "git_url": "https://try.gogs.io/api/v1/repos/unknwon/git-module-testrepo/git/trees/b312d30ddff2f204d6b6aa78dd4beda593d9d787",
+    "html_url": "https://try.gogs.io/unknwon/git-module-testrepo/src/master/main",
+    "download_url": "https://try.gogs.io/unknwon/git-module-testrepo/raw/master/main",
+    "_links": {
+      "git": "https://try.gogs.io/api/v1/repos/unknwon/git-module-testrepo/git/trees/b312d30ddff2f204d6b6aa78dd4beda593d9d787",
+      "self": "https://try.gogs.io/api/v1/repos/unknwon/git-module-testrepo/contents/src/main",
+      "html": "https://try.gogs.io/unknwon/git-module-testrepo/src/master/main"
     }
   }
 ]
