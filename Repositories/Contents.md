@@ -72,6 +72,12 @@ Content-Type: application/octet-stream
 GET /repos/:username/:reponame/contents/:ref/:path
 ```
 
+### Parameters
+
+|Name|Type|Description|
+|----|----|-----------|
+|`ref`|`string`|The name of the commit/branch/tag. The default is the default branch of the repository, usually is `master`.|
+
 ### Response if content is a file
 ```
 Status: 200 OK
