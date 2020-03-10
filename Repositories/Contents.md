@@ -173,18 +173,19 @@ Status: 200 OK
 ```json
 {
   "type": "submodule",
+  "submodule_git_url": "https://github.com/gogs/docs-api.git",
   "size": 0,
-  "name": "testrepo",
-  "path": "testrepo",
-  "sha": "2ddc5c87f1e6d78ea63a2d5fa19527a804ad252e",
-  "url": "https://try.gogs.io/api/v1/repos/root/test-symlink/contents/testrepo",
-  "git_url": "https://try.gogs.io/api/v1/repos/root/test-symlink/trees/2ddc5c87f1e6d78ea63a2d5fa19527a804ad252e",
-  "html_url": "https://try.gogs.io/api/v1/repos/root/test-symlink/tree/2ddc5c87f1e6d78ea63a2d5fa19527a804ad252e",
-  "download_url": "https://try.gogs.io/api/v1/root/test-symlink/raw/testrepo",
+  "name": "docs-api",
+  "path": "gogs/docs-api",
+  "sha": "6b08f76a5313fa3d26859515b30aa17a5faa2807",
+  "url": "https://try.gogs.io/api/v1/repos/unknwon/git-module-testrepo/contents/gogs/docs-api",
+  "git_url": "",
+  "html_url": "https://try.gogs.io/unknwon/git-module-testrepo/src/master/docs-api",
+  "download_url": "https://try.gogs.io/unknwon/git-module-testrepo/raw/master/docs-api",
   "_links": {
-    "git": "https://try.gogs.io/api/v1/repos/root/test-symlink/trees/2ddc5c87f1e6d78ea63a2d5fa19527a804ad252e",
-    "self": "https://try.gogs.io/api/v1/repos/root/test-symlink/contents/testrepo",
-    "html": "https://try.gogs.io/api/v1/repos/root/test-symlink/tree/2ddc5c87f1e6d78ea63a2d5fa19527a804ad252e"
+    "git": "",
+    "self": "https://try.gogs.io/api/v1/repos/unknwon/git-module-testrepo/contents/gogs/docs-api",
+    "html": "https://try.gogs.io/unknwon/git-module-testrepo/src/master/docs-api"
   }
 }
 ```
