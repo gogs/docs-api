@@ -66,7 +66,7 @@ Status: 200 OK
 Content-Type: application/octet-stream
 ```
 
-## Get Contents
+## Get contents
 
 ```
 GET /repos/:username/:reponame/contents/:ref/:path
@@ -79,18 +79,20 @@ Status: 200 OK
 ```json
 {
   "type": "file",
-  "size": 0,
-  "name": "text1.text",
-  "path": "text1.text",
-  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-  "url": "https://try.gogs.io/api/v1/repos/root/test-symlink/contents/text1.text",
-  "git_url": "https://try.gogs.io/api/v1/repos/root/test-symlink/trees/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-  "html_url": "https://try.gogs.io/api/v1/repos/root/test-symlink/tree/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-  "download_url": "https://try.gogs.io/api/v1/root/test-symlink/raw/text1.text",
+  "encoding": "base64",
+  "size": 795,
+  "name": "README.txt",
+  "path": "README.txt",
+  "content": "VGhpcyBpcyBhIHNhbXBsZSBwcm9qZWN0IHN0dWRlbnRzIGNhbiB1c2UgZHVyaW5nIE1hdHRoZXcncyBHaXQgY2xhc3MuCgpIZXJlIGlzIGFuIGFkZGl0aW9uIGJ5IG1lCgpXZSBjYW4gaGF2ZSBhIGJpdCBvZiBmdW4gd2l0aCB0aGlzIHJlcG8sIGtub3dpbmcgdGhhdCB3ZSBjYW4gYWx3YXlzIHJlc2V0IGl0IHRvIGEga25vd24gZ29vZCBzdGF0ZS4gIFdlIGNhbiBhcHBseSBsYWJlbHMsIGFuZCBicmFuY2gsIHRoZW4gYWRkIG5ldyBjb2RlIGFuZCBtZXJnZSBpdCBpbiB0byB0aGUgbWFzdGVyIGJyYW5jaC4KCkFzIGEgcXVpY2sgcmVtaW5kZXIsIHRoaXMgY2FtZSBmcm9tIG9uZSBvZiB0aHJlZSBsb2NhdGlvbnMgaW4gZWl0aGVyIFNTSCwgR2l0LCBvciBIVFRQUyBmb3JtYXQ6CgoqIGdpdEBnaXRodWIuY29tOm1hdHRoZXdtY2N1bGxvdWdoL2hlbGxvZ2l0d29ybGQuZ2l0CiogZ2l0Oi8vZ2l0aHViLmNvbS9tYXR0aGV3bWNjdWxsb3VnaC9oZWxsb2dpdHdvcmxkLmdpdAoqIGh0dHBzOi8vbWF0dGhld21jY3VsbG91Z2hAZ2l0aHViLmNvbS9tYXR0aGV3bWNjdWxsb3VnaC9oZWxsb2dpdHdvcmxkLmdpdAoKV2UgY2FuLCBhcyBhbiBleGFtcGxlIGVmZm9ydCwgZXZlbiBtb2RpZnkgdGhpcyBSRUFETUUgYW5kIGNoYW5nZSBpdCBhcyBpZiBpdCB3ZXJlIHNvdXJjZSBjb2RlIGZvciB0aGUgcHVycG9zZXMgb2YgdGhlIGNsYXNzLgoKVGhpcyBkZW1vIGFsc28gaW5jbHVkZXMgYW4gaW1hZ2Ugd2l0aCBjaGFuZ2VzIG9uIGEgYnJhbmNoIGZvciBleGFtaW5hdGlvbiBvZiBpbWFnZSBkaWZmIG9uIEdpdEh1Yi4K",
+  "sha": "adfd6da3c0a3fb038393144becbf37f14f780087",
+  "url": "https://try.gogs.io/api/v1/repos/unknwon/git-module-testrepo/contents/README.txt",
+  "git_url": "https://try.gogs.io/api/v1/repos/unknwon/git-module-testrepo/git/blobs/adfd6da3c0a3fb038393144becbf37f14f780087",
+  "html_url": "https://try.gogs.io/unknwon/git-module-testrepo/src/master/README.txt",
+  "download_url": "https://try.gogs.io/unknwon/git-module-testrepo/raw/master/README.txt",
   "_links": {
-    "git": "https://try.gogs.io/api/v1/repos/root/test-symlink/trees/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-    "self": "https://try.gogs.io/api/v1/repos/root/test-symlink/contents/text1.text",
-    "html": "https://try.gogs.io/api/v1/repos/root/test-symlink/tree/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    "git": "https://try.gogs.io/api/v1/repos/unknwon/git-module-testrepo/git/blobs/adfd6da3c0a3fb038393144becbf37f14f780087",
+    "self": "https://try.gogs.io/api/v1/repos/unknwon/git-module-testrepo/contents/README.txt",
+    "html": "https://try.gogs.io/unknwon/git-module-testrepo/src/master/README.txt"
   }
 }
 ```
