@@ -69,7 +69,7 @@ Content-Type: application/octet-stream
 ## Get contents
 
 ```
-GET /repos/:username/:reponame/contents/:ref/:path
+GET /repos/:username/:reponame/contents/:path
 ```
 
 ### Parameters
@@ -77,6 +77,36 @@ GET /repos/:username/:reponame/contents/:ref/:path
 |Name|Type|Description|
 |----|----|-----------|
 |`ref`|`string`|The name of the commit/branch/tag. The default is the default branch of the repository, usually is `master`.|
+
+### Response if path is empty
+
+It's possible for `:path` to be empty. If no path is specified the contents at the root of the repository are returned.
+
+```
+Status: 200 OK
+```
+```json
+[
+  {
+    "type": "file",
+    "encoding": "base64",
+    "size": 50,
+    "name": "Sum.groovy",
+    "path": "src/Sum.groovy",
+    "content": "c3RhdGljIGludCBzdW0oaW50IHZhbDEsIHZhbDIpIHsKICAgIHZhbDEgKyB2YWwyCn0=",
+    "sha": "9f221918607d78c1db3f6c6d5afa68a66b1146a8",
+    "url": "https://try.gogs.io/api/v1/repos/unknwon/git-module-testrepo/contents/src/Sum.groovy",
+    "git_url": "https://try.gogs.io/api/v1/repos/unknwon/git-module-testrepo/git/blobs/9f221918607d78c1db3f6c6d5afa68a66b1146a8",
+    "html_url": "https://try.gogs.io/unknwon/git-module-testrepo/src/master/Sum.groovy",
+    "download_url": "https://try.gogs.io/unknwon/git-module-testrepo/raw/master/Sum.groovy",
+    "_links": {
+      "git": "https://try.gogs.io/api/v1/repos/unknwon/git-module-testrepo/git/blobs/9f221918607d78c1db3f6c6d5afa68a66b1146a8",
+      "self": "https://try.gogs.io/api/v1/repos/unknwon/git-module-testrepo/contents/src/Sum.groovy",
+      "html": "https://try.gogs.io/unknwon/git-module-testrepo/src/master/Sum.groovy"
+    }
+  }
+]
+```
 
 ### Response if content is a file
 ```
