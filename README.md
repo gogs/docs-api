@@ -122,6 +122,7 @@ The possible rel values are:
 
 - [Go](https://github.com/gogs/go-gogs-client)
 - [Android](https://github.com/unfoldingWord-dev/android-gogs-client)
+- [Bash](https://github.com/grogorick/gogs-cli)
 
 ## Notes
 
