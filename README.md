@@ -32,6 +32,7 @@ If you have any questions or concern, please [file an issue](https://github.com/
   - [Releases](Repositories/Releases.md)
   - [Webhooks](Repositories/Webhooks.md)
 - [Users](Users)
+  - [Search](Users/Search.md)
   - [Emails](Users/Emails.md)
   - [Followers](Users/Followers.md)
   - [Public Keys](Users/Public%20Keys.md)
