@@ -118,9 +118,9 @@ Status: 200 OK
 ]
 ```
 
-## Create a access token
+## Create an access token
 
-Create a access token requires that you are authenticated via basic authentication.
+Creating an access token requires that you are authenticated via basic authentication.
 
 ```
 POST /users/:username/tokens
@@ -149,5 +149,39 @@ Status: 201 Created
 {
   "name": "gogs",
   "sha1": "61d40add61894c11b14049b5ab189dc8f0500aef"
+}
+```
+
+## Delete an access token
+
+Deleting an access token requires that you are authenticated via basic authentication.
+
+```
+DELETE /users/:username/tokens
+```
+
+### Parameters
+
+|Name|Type|Description|
+|----|----|-----------|
+|sha1|string|**Required** SHA1 of access token|
+
+### Example
+
+```json
+{
+    "sha1": "61d40add61894c11b14049b5ab189dc8f0500aef"
+}
+```
+
+### Response
+
+```
+Status: 200 OK
+```
+```json
+{
+  "name": "name_of_deleted_key",
+  "sha1": ""
 }
 ```
